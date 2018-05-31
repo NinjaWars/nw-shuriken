@@ -1,7 +1,10 @@
 {
   "name": "nw-shuriken",
+  "description":"A collection of components for building the http://ninjawars.net webgame.",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://ninjawars.net",
+  "repository":"https://github.com/NinjaWars/nw-shuriken",
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
