@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Shuriken from './components'
+import Shuriken from './components/Shuriken/Shuriken'
 
 class App extends Component {
   render() {
@@ -14,6 +14,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <div>
+          <Shuriken>Demo for Shuriken</Shuriken>
+        </div>
       </div>
     );
   }
