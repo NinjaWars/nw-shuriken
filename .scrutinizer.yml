@@ -1,0 +1,17 @@
+# .scrutinizer.yml
+
+checks:
+    javascript:
+        code_rating: true
+        duplication: true
+
+build:
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - js-scrutinizer-run
+
+filter:
+    excluded_paths:
+        - tests/*
