@@ -11,10 +11,10 @@
     "name": "Roy Ronalds",
     "url": "http://royronalds.com/"
   },
-  "license": {
-    "license": "MIT"
-  },
+  "license": "MIT",
   "dependencies": {
+    "material-ui": "^0.20.1",
+    "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
