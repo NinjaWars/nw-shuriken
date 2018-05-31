@@ -2,9 +2,15 @@
   "name": "nw-shuriken",
   "description":"A collection of components for building the http://ninjawars.net webgame.",
   "version": "0.1.0",
-  "private": true,
   "homepage":"http://ninjawars.net",
   "repository":"https://github.com/NinjaWars/nw-shuriken",
+  "bugs":{
+    "url" : "https://github.com/BitLucid/ninjawars/issues"
+  },
+  "author":{ "name" : "Roy Ronalds"
+  , "url" : "http://royronalds.com/"
+  },
+  "license":{ "license" : "MIT" },
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
