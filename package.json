@@ -1,7 +1,7 @@
 {
   "name": "nw-shuriken",
   "description": "A collection of components for building the http://ninjawars.net webgame.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "http://ninjawars.net",
   "repository": "https://github.com/NinjaWars/nw-shuriken",
   "bugs": {
