@@ -12,9 +12,6 @@
     "url": "http://royronalds.com/"
   },
   "license": "MIT",
-  "jest": {
-    "verbose": true
-  },
   "dependencies": {
     "@material-ui/core": "^1.1.0",
     "@material-ui/icons": "^1.1.0",
