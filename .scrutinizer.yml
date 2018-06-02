@@ -3,7 +3,6 @@
 checks:
     javascript:
         code_rating: true
-        duplication: true
 
 build:
     nodes:
