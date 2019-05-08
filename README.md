@@ -29,7 +29,8 @@ No production deployment yet.
 
 ## Publish
 
-    npm publish
+    yarn login
+    yarn publish
 
-    view at: https://www.npmjs.com/package/nw-shuriken
+view at: https://www.npmjs.com/package/nw-shuriken
 
