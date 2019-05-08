@@ -29,3 +29,7 @@ No production deployment yet.
 
 ## Publish
 
+    npm publish
+
+    view at: https://www.npmjs.com/package/nw-shuriken
+
