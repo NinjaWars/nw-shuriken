@@ -15,6 +15,7 @@
   "dependencies": {
     "@material-ui/core": "^1.1.0",
     "@material-ui/icons": "^1.1.0",
+    "core-js": "3",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -26,6 +27,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "unit-test": "env CI=true react-scripts test --env=jsdom",
-    "deploy": "yarn build && surge ./build nw-shuriken.surge.sh"
+    "deploy": "yarn build && surge ./build nw-shuriken.surge.sh",
+    "browse": "xdg-open http://localhost:9191"
   }
 }
