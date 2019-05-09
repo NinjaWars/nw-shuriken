@@ -28,7 +28,11 @@
     "eject": "react-scripts eject",
     "unit-test": "env CI=true react-scripts test --env=jsdom",
     "deploy": "yarn build && surge ./build nw-shuriken.surge.sh",
-    "browse": "xdg-open http://localhost:9191"
+    "browse": "xdg-open http://localhost:9191",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "npx eslint src/**/*.js src/**/*.jsx",
+    "prepush": "set CI=true && yarn test && yarn lint"
   },
   "browserslist": {
     "production": [
@@ -41,5 +45,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "flow-bin": "^0.98.1"
   }
 }
