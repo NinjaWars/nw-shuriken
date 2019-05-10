@@ -1,0 +1,67 @@
+version: v1.0
+name: nw-shuriken semaphore
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: "Build"
+    task:
+      env_vars:
+        - name: APP_ENV
+          value: test
+        - name: CI
+          value: true
+      jobs:
+      - name: Install
+        commands:
+          - checkout
+          - ls -1
+          - npm -v
+          - echo "installing..."
+          - apt get install npm
+          - npm install -g yarn
+          - yarn install
+          - echo $APP_ENV
+          - echo "done"
+  - name: "Smoke tests"
+    task:
+      jobs:
+      - name: Smoke
+        commands:
+          - checkout
+          - echo "make smoke"
+  - name: "Unit tests"
+    task:
+      jobs:
+      - name: Tests
+        commands:
+          - checkout
+          - export CI=true
+          - yarn test
+          - echo "DONE"
+      - name: Lint code
+        commands:
+          - checkout
+          - yarn lint
+          - echo "DONE"
+      - name: Check security
+        commands:
+          - checkout
+          - yarn audit
+          - echo "DONE"
+  - name: "Integration tests"
+    task:
+      jobs:
+      - name: Cucumber
+        commands:
+          - checkout
+          - echo "make cucumber"
+  - name: "Deploy Stage"
+    task:
+      jobs:
+      - name: Push
+        commands:
+          - checkout
+          - echo "For example: install s3 and deploy to s3"
+          - echo "Then trigger aws codedeploy, for example"
