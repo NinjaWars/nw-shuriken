@@ -32,7 +32,7 @@
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "npx eslint src/**/*.js src/**/*.jsx",
-    "prepush": "set CI=true && yarn test && yarn lint"
+    "prepush": "CI=true && yarn unit-test --ci && yarn lint"
   },
   "browserslist": {
     "production": [
