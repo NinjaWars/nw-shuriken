@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
 
 const styles = theme => ({
   button: {
@@ -10,16 +10,16 @@ const styles = theme => ({
   input: {
     display: 'none',
   },
-});
+})
 
-/** 
+/**
  * Just a simple buttons container for now
  *
  */
 function Shuriken(props) {
-  const { classes } = props;
+  const { classes } = props
   return (
-    <div>
+    <form>
       <Button className={classes.button}>Default</Button>
       <Button color="primary" className={classes.button}>
         Primary
@@ -45,12 +45,12 @@ function Shuriken(props) {
           Upload
         </Button>
       </label>
-    </div>
-  );
+    </form>
+  )
 }
 
 Shuriken.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.shape({}).isRequired,
+}
 
-export default withStyles(styles)(Shuriken);
+export default withStyles(styles)(Shuriken)
