@@ -25,4 +25,5 @@ _(check box with an x where it applies)_
 
 ## _Preview results in my branch at the url:_
 
--   https://localhost:5555/someUrlHere
+-   http://nw-shuriken.surge.sh/
+- or else just `yarn browse` to view locally
