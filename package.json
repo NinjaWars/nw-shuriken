@@ -1,7 +1,7 @@
 {
   "name": "nw-shuriken",
   "description": "A collection of components for building the http://ninjawars.net webgame.",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "homepage": "http://ninjawars.net",
   "repository": "https://github.com/NinjaWars/nw-shuriken",
   "bugs": {
@@ -19,13 +19,16 @@
   "dependencies": {
     "@babel/core": "^7.16.5",
     "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
+    "@babel/plugin-syntax-flow": "^7.16.5",
+    "@babel/plugin-transform-react-jsx": "^7.16.5",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "core-js": "3.20.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "webpack": "^5.65.0"
   },
   "scripts": {
     "init-project": "echo 'no-op'",
@@ -69,6 +72,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
+    "autoprefixer": "^10.4.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-import-resolver-node": "^0.3.6",
@@ -78,7 +82,10 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "flow-bin": "^0.168.0",
     "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "jest-watch-typeahead": "1.0.0",
     "lint-staged": "^12.1.3",
+    "postcss": "^8.4.5",
     "prettier": "^2.5.1"
   }
 }
