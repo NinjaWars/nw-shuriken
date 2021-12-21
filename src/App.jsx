@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
-import Shuriken from './components/Shuriken/Shuriken'
+
+import React, { Component } from 'react'
+
+import Shuriken from './components/Shuriken'
+import logo from './logo.svg'
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
