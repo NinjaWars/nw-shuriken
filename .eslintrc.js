@@ -21,21 +21,22 @@ module.exports = {
     'react',
   ],
   rules: {
-    "semi":[2, "never"],
-    "implicit-arrow-linebreak": 0,
-    "eol-last": 0,
-    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
-    "jsx-a11y/label-has-for": [ 2, {
-            "components": [ "Label" ],
-            "required": {
-                "every": [ "id" ]
-            },
-            "allowChildren": false
-        }],
-    "jsx-a11y/label-has-associated-control": [ 2, {
-        "labelComponents": ["label"],
-        "labelAttributes": ["htmlFor"],
-        "controlComponents": ["input"]
-      }]
+    semi: [2, 'never'],
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
+    'implicit-arrow-linebreak': 0,
+    'eol-last': 0,
+    'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
+    'jsx-a11y/label-has-for': [2, {
+      components: ['Label'],
+      required: {
+        every: ['id'],
+      },
+      allowChildren: false,
+    }],
+    'jsx-a11y/label-has-associated-control': [2, {
+      labelComponents: ['label'],
+      labelAttributes: ['htmlFor'],
+      controlComponents: ['input'],
+    }],
   },
-};
+}

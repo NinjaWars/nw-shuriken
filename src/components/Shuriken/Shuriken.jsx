@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
  * Just a simple buttons container for now
  *
  */
-const Shuriken = function ({ color = 'primary', ...rest }) {
+const Shuriken = ({ color = 'primary', ...rest }) => {
   const classes = useStyles()
   return (
     <form>
