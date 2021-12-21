@@ -27,6 +27,7 @@
   },
   "scripts": {
     "init-project": "echo 'no-op'",
+    "doctor": "yarn dlx @yarnpkg/doctor",
     "start": "PORT=9191 react-scripts start ",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -37,7 +38,7 @@
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "npx eslint src/**/*.js src/**/*.jsx",
-    "postpush": "CI=true && yarn unit-test --ci && yarn lint"
+    "post-push": "CI=true && yarn unit-test --ci && yarn lint"
   },
   "browserslist": {
     "production": [
@@ -54,7 +55,7 @@
   "husky": {
     "hooks": {
       "post-commit": "yarn lint",
-      "post-push": "yarn postpush"
+      "post-push": "yarn post-push"
     }
   },
   "lint-staged": {
@@ -70,6 +71,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "flow-bin": "^0.168.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.3",
