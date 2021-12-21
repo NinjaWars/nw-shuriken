@@ -65,7 +65,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.1, @babel/core@npm:^7.12.3, @babel/core@npm:^7.16.0, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
+"@babel/core@npm:^7.11.1, @babel/core@npm:^7.12.3, @babel/core@npm:^7.16.0, @babel/core@npm:^7.16.5, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
   version: 7.16.5
   resolution: "@babel/core@npm:7.16.5"
   dependencies:
@@ -686,7 +686,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-private-property-in-object@npm:^7.16.5":
+"@babel/plugin-proposal-private-property-in-object@npm:*, @babel/plugin-proposal-private-property-in-object@npm:^7.16.5":
   version: 7.16.5
   resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.16.5"
   dependencies:
@@ -8923,6 +8923,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nw-shuriken@workspace:."
   dependencies:
+    "@babel/core": ^7.16.5
+    "@babel/plugin-proposal-private-property-in-object": ^7.16.5
     "@material-ui/core": ^4.12.3
     "@material-ui/icons": ^4.11.2
     "@testing-library/react": ^12.1.2
