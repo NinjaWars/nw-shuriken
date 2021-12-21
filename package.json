@@ -35,6 +35,7 @@
     "unit-test": "env CI=true react-scripts test --env=jsdom",
     "deploy": "yarn build && surge ./build nw-shuriken.surge.sh",
     "browse": "xdg-open http://localhost:9191",
+    "browse:repo": "xdg-open https://github.com/NinjaWars/nw-shuriken",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "npx eslint src/**/*.js src/**/*.jsx",
