@@ -26,6 +26,7 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "init-project": "echo 'no-op'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
