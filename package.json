@@ -38,7 +38,7 @@
     "browse:repo": "xdg-open https://github.com/NinjaWars/nw-shuriken",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "format": "prettier --write \"src/**/*.js\"",
-    "lint": "npx eslint src/**/*.js src/**/*.jsx",
+    "lint": "yarn run eslint src/**/*.js src/**/*.jsx",
     "post-push": "CI=true && yarn unit-test --ci && yarn lint"
   },
   "browserslist": {
