@@ -19,4 +19,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.yarn/
+
+# Yarn files to ignore and NOT ignore, as cache packages get committed (https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored)
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.husky/_

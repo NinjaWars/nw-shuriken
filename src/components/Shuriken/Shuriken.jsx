@@ -1,26 +1,27 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
+/* eslint-disable react/jsx-props-no-spreading */
 import Button from '@material-ui/core/Button'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { makeStyles } from '@material-ui/core'
 
-const styles = theme => ({
+const useStyles = makeStyles((theme) => ({
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(1),
   },
   input: {
     display: 'none',
   },
-})
+}))
 
 /**
  * Just a simple buttons container for now
  *
  */
-function Shuriken(props) {
-  const { classes } = props
+const Shuriken = ({ color = 'primary', ...rest }) => {
+  const classes = useStyles()
   return (
     <form>
-      <Button className={classes.button}>Default</Button>
+      <Button className={classes.button} color={color} {...rest}>Shuriken</Button>
       <Button color="primary" className={classes.button}>
         Primary
       </Button>
@@ -50,7 +51,10 @@ function Shuriken(props) {
 }
 
 Shuriken.propTypes = {
-  classes: PropTypes.shape({}).isRequired,
+  // eslint-disable-next-line react/require-default-props
+  color: PropTypes.string,
+  // eslint-disable-next-line react/require-default-props
+  onClick: PropTypes.func,
 }
 
-export default withStyles(styles)(Shuriken)
+export default Shuriken
