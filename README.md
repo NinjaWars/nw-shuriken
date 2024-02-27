@@ -21,7 +21,7 @@ A collection of components for building the http://ninjawars.net webgame.
 
 ## Deploy
 
-    yarn deploy 
+    yarn deploy
 
 Deploys to http://nw-shuriken.surge.sh
 
@@ -33,4 +33,3 @@ No production deployment yet.
     yarn publish
 
 view at: https://www.npmjs.com/package/nw-shuriken
-
